@@ -1,6 +1,6 @@
 # How to deploy a .NET 7 Web API in Azure Container Instance
 
-## 1. Create an Azure Container Registry
+## 1. Create an Azure Container Registry with Azure SDK for .NET
 
 ```csharp
 using Azure.Core;
