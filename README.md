@@ -94,3 +94,8 @@ docker build -t mywebapicontainer.azurecr.io/mywebapicontainer:v1 .
 docker push mywebapicontainer.azurecr.io/mywebapicontainer:v1
 ```
 
+## 6. We create the Azure Container Instance (ACI) and we deploy it
+
+```
+az container create --resource-group myRG --name mycontainerinstance --image mywebapicontainer.azurecr.io/mywebapicontainer:v1 --cpu 1 --memory 1.5 --registry-login-server mywebapicontainer.azurecr.io --registry-username mywebapicontainer --registry-password tk5N+2tBFnNxImB0ByTt58Nt+HLvCwLWMA8bNn1lwY+ACRAeOtn/ --dns-name-label mywebapidns7788 --ports 80 --location westeurope
+```
