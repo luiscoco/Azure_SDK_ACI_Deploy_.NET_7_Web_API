@@ -82,4 +82,15 @@ Then we login in the Azure ACR and set the username and password in the admin us
 az acr login --name mywebapicontainer
 ```
 
+## 4. We build the Docker Image
+
+```
+docker build -t mywebapicontainer.azurecr.io/mywebapicontainer:v1 .
+```
+
+## 5. We push the Docker image to the Azure ACR
+
+```
+docker push mywebapicontainer.azurecr.io/mywebapicontainer:v1
+```
 
