@@ -57,8 +57,7 @@ Console.WriteLine($"Created container registry: {containerRegistry.Data.Id}");
 
 Open Visual Studio 2022 Community Edition and we create a new .NET 7 API
 
-
-
+We enable the Docker support in the application for automatically creating a dockerfile
 
 ## 3. Create the docker image and we push in Azure ACR
 
