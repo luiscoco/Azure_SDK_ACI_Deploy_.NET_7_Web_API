@@ -98,9 +98,9 @@ docker push mywebapicontainer.azurecr.io/mywebapicontainer:v1
 
 We copy the password for creating the ACI and deploy it in the next section
 
-´´´
+```
 az acr credential show --name mycontainerinstance
-´´´
+```
 
 ## 7. We create the Azure Container Instance (ACI) and we deploy it
 
